@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-05</title>
+</head>
+<body>
+  <center><!-- An image at the top of the page, I added this image to the folder of images-->
+   <p><img src="./images/83a19acf-73f3-4f58-ac4b-852c13f40462.png" alt="Png image of a registration form" height="225" width="190"></p>
+    <form method="post">
+
+         <!-- HERE is themform placed below the image -->
+<!-- These are the input tags with type default i.e.text  -->
+        <label for=FullName><b>FullName</b>
+            <input type="text" id=FullName placeholder="Enter Your Name" maxlength="20">
+        </label><br><br>
+        <label for="FatherName"><b>FatherName</b>
+            <input type="text" id="FatherName" placeholder="Enter Your FatherName">
+        </label><br><br>
+        <!-- here i did the input type submit for verifying the email addresss -->
+
+        <label for="EmailAddress"><b>EmailAddress</b>
+            <input type="email" required id="EmailAddress" placeholder="Enter Your Email">
+        </label><br><br>
+        <label for="Password"><b>Password</b>
+            <input type="password" id="Password" placeholder="Enter Your Password">
+        </label><br><br>
+      Verify Your Email<input type="submit" value="Verify"><br><br>
+
+      <!-- Here I use type number for the age  -->
+       <label for="Age"> <b>Your Age</b>
+        <input type="number" id="Age" placeholder="Enter Your Age">
+       </label><br><br>
+
+       <!-- Type radio  -->
+       <b>Gender</b> <br><br>
+       <input type="radio" name="Gender" value="Male">Male <br><br>
+       <input type="radio" name="Gender" value="Female">Female <br><br>
+
+       <!-- Type checkbox and I used checked for reading books as it will be remain checked  -->
+      <b>What are your Hobbies in free time? </b><br><br>
+      <input type="checkbox" checked name="Hobbies" value="Reading books" >Reading books<br><br>
+      <input type="checkbox" name="Hobbies" value="Sports">Sports<br><br>
+      <input type="checkbox" name="Hobbies" value="Gaming">Gaming<br><br>
+      <input type="checkbox" name="Hobbies" value="Cooking">Cooking<br><br>
+      <input type="checkbox" name="Hobbies" value="Photography">Photography<br><br>
+      <input type="checkbox" name="Hobbies" value="Travelling">Travelling<br><br>
+
+      <!-- Type date n time  -->
+Date of Birth(DOB) <input type="date" name="Date"><br><br>
+Time <input type="time"><br><br>
+
+<!-- Here I made the dropdown using select and option tags and i used selected disabled for SELECT YOUR CITY so it will show on the first  -->
+Select your city <select name="City" id="City">
+    <option value="Select your city" selected disabled>Select your city</option>
+    <option value="Karachi">Karachi</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Lahore">Lahore</option>
+    <option value="Quetta">Quetta</option>
+</select><br><br>
+<!-- Used text area for the address  -->
+Address
+<textarea name="Address" cols="10" rows="5" id="Address" placeholder="Write your complete Address"></textarea><br><br><br>
+<button>REGISTER</button>
+
+    </form></center>  
+</body>
+</html>
