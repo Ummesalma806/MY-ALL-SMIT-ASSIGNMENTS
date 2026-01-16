@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW FORM</title>
+</head>
+<body>
+    <center>
+   <form action="#" method="post">
+    <h1><b>REVIEW FORM</b></h1>
+    <fieldset id="User-details">
+        <legend><b>Account Details</b></legend>
+        <label for="UserName"><b>UserName</b>
+            <input type="text" name="UserName" id="UserName" placeholder="Enter Your Name"><br><br>
+        </label>
+         <label for="Email"><b>EmailAddrress</b>
+            <input type="email" name="Email" id="Email" placeholder="Enter Your Email"><br><br>
+        </label>
+         <label for="Password"><b>Password</b>
+            <input type="password" name="Password" id="Password" placeholder="Enter Your Password"><br><br>
+        </label>
+        <a href="./index.html#Personal-data"><input type="button" value="Next"></a>
+    </fieldset><br>
+
+    <fieldset id="Personal-data">
+        <legend><b>Personal Details</b></legend>
+     
+        <label for="FullName"><b>FullName</b>
+            <input type="text" name="FullName" id="FullName" placeholder="Enter Your FullName"><br><br>
+        </label>
+        <label for="LastName"><b>LastName</b>
+            <input type="text" name="LastName" id="LastName" placeholder="Enter Your LastName"><br><br>
+            
+        </label>
+        <b> Gender </b><br><br><input type="radio" name="Gender" value="Male">Male <br><br>
+         <input type="radio" name="Gender" value="Female">Female <br><br>
+         <input type="radio" name="Gender" value="Other">Other <br><br>
+
+        <b> Date of Birth(DOB)</b> <input type="date"><br><br>
+          <a href="./index.html#Review"><input type="button" value="Next"></a>
+    </fieldset>
+    <fieldset id="Review">
+        <legend><b>Review Section</b></legend>
+       <b> Rating: </b><br><br>
+        <select name="Rating" id="Rating">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+        </select><br><br>
+      <b>Feedback/Comments:</b> 
+      <textarea name="Feedback/Comments:" id="Feedback/Comments:" placeholder="Write Your Comments Here" rows="8" cols="30"></textarea><br><br> <a href="./index.html#User-details"><input type="button" value="Previous"></a>
+    </fieldset><br><br>
+    <input type="submit" value="SUBMIT REVIEW">
+   </form></center>
+</body>
+</html>
