@@ -6,33 +6,48 @@
     <title>REVIEW-FORM</title>
 </head>
 <body>
-    <center> <h1><nav style="background-color: aqua;">
-       <a href="./page1.html">Step 1:Account</a>&nbsp;|&nbsp;
-        <a href="./page2.html">Step 2:Personal Details</a>&nbsp;|&nbsp;
-       <a href="./page3.html">Step 3:Your Review</a>&nbsp;|&nbsp;</h1>
-       
-    </nav>
-    <form action="#" method="post">
- <fieldset style="background-color: lightblue;">
+     <center>
+<nav style="background-color:aqua;">
+    <h1>
+        <a href="./page1.html">Step 1: Account</a> | 
+        <a href="./page2.html">Step 2: Personal Details</a> | 
+        <a href="./page3.html">Step 3: Your Review</a>
+    </h1>
+</nav>
+
+<form action="#" method="post">
+    <fieldset>
         <legend><b>Personal Details</b></legend>
-     
-        <label for="FullName"><b>FullName</b>
-            <input type="text" name="FullName" id="FullName" placeholder="Enter Your FullName"><br><br>
-        </label>
-        <label for="LastName"><b>LastName</b>
-            <input type="text" name="LastName" id="LastName" placeholder="Enter Your LastName"><br><br>
-            
-        </label>
-        <b> Gender </b><br><br><input type="radio" name="Gender" value="Male">Male
-         <input type="radio" name="Gender" value="Female">Female
-         <input type="radio" name="Gender" value="Other">Other <br><br>
 
-        <b> Date of Birth(DOB)</b> <input type="date"><br><br>
-         <a href="./page1.html">
-        <input type="button" style="background-color:aqua; color: indigo;" value="Previous"></a>
+        <label for="FullName"><b>Full Name</b></label><br>
+        <input type="text" id="FullName" name="FullName" placeholder="Enter Your Full Name"><br><br>
 
-          <a href="./page3.html"><input type="button" value="Next" style="background-color: aqua; color: blue;"></a>
-    </fieldset></center></form>
-    
+        <label for="LastName"><b>Last Name</b></label><br>
+        <input type="text" id="LastName" name="LastName" placeholder="Enter Your Last Name"><br><br>
+
+        <b>Gender</b><br><br>
+        <input type="radio" name="Gender" id="Male" value="Male">
+        <label for="Male">Male</label><br><br>
+
+        <input type="radio" name="Gender" id="Female" value="Female">
+        <label for="Female">Female</label><br><br>
+
+        <input type="radio" name="Gender" id="Other" value="Other">
+        <label for="Other">Other</label><br><br>
+
+        <label for="DOB"><b>Date of Birth</b></label>
+        <input type="date" id="DOB" name="DOB"><br><br>
+
+        <a href="./page1.html">
+            <img src="./back-butto-removebg-preview.png" alt="Back" width="60" height="30">
+        </a>
+
+        <a href="./page3.html">
+            <img src="./back-and-next-buttons-vector-25226647-removebg-preview-removebg-preview.png" alt="Next" width="60" height="30">
+        </a>
+    </fieldset>
+</form>
+</center>
+
 </body>
 </html>
