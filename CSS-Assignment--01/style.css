@@ -34,12 +34,34 @@ h1{
     background-color:#8FAFD4 ;
     color: aqua;
 }
-/*.blue-07{
-    background-color: #FFE4E1;
+.red-07{
+   background-color: rgb(247, 41, 41);
+   color: palevioletred;
+
 }
-.blue-08{
-    background-color: #4B0000;
+.red-08{
+    background-color: rgb(214, 56, 56);
+    color: palevioletred;
+
 }
-.blue-09{
-    background-color: #540606;
-}/*
+.red-09{
+    background-color: rgb(193, 27, 27);
+    color: palevioletred;
+}
+.red-10{
+background-color: rgb(176, 20, 20);
+color: palevioletred;
+}
+.red-11{
+background-color: rgb(150, 9, 9);
+
+color: palevioletred;
+}
+.red-12{ 
+    background-color: maroon;
+    color: palevioletred;
+
+}
+.neutral{
+    background-color: #800080;
+}
