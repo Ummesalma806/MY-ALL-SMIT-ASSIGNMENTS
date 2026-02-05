@@ -1,0 +1,82 @@
+
+
+
+@font-face {
+    font-family: regularfont;
+    src: url(./assets/AtomicAge-Regular.ttf);
+}
+
+
+h1{
+    font-family: regularfont;
+    text-align:center;
+    text-shadow: 10px 7px 5px rgb(255, 6, 48);
+    color: rgba(231, 247, 6, 0.751);
+}
+.style{
+
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: 40px;
+}
+
+.typo{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-indent: 40px;
+}
+.text{
+    text-transform: capitalize;
+    text-decoration:underline;
+    font-weight: bold;
+    font-style: oblique;
+     word-spacing: 1rem;
+}
+.decoration{
+    line-height: 2em;
+    letter-spacing: 0.5rem;
+   
+}
+.decoration::first-line{
+    font-weight: bolder ;
+}
+.decoration::first-letter{
+    font-size: 4vw;
+}
+
+.color-1{
+    height: 200px;
+    width: 200px;
+    background-color: #702a07;
+    color: azure;
+
+}
+.color-2{
+    height: 200px;
+    width: 200px;
+    background-color: #ae410b;
+    color: azure;
+}
+.color-3{
+    height: 200px;
+    width: 200px;
+    background-color: #F85E11;
+    color: azure;
+}
+.color-4{
+    height: 200px;
+    width: 200px;
+    background-color: #e7946b;
+    color: azure;
+}
+.color-5{
+    height: 200px;
+    width: 200px;
+    background-color: #F85E11;
+    color: azure;
+}
+.shades{
+    display: flex;
+    
+}
