@@ -1,5 +1,7 @@
 
-
+*{
+    background-color: beige;
+}
 
 @font-face {
     font-family: regularfont;
@@ -12,19 +14,23 @@ h1{
     text-align:center;
     text-shadow: 10px 7px 5px rgb(255, 6, 48);
     color: rgba(231, 247, 6, 0.751);
+    font-weight: bolder;
+    font-size: 50px;
 }
 .style{
 
   font-family: "Zen Loop", cursive;
-  font-weight: 400;
+  font-weight: bolder;
   font-style: normal;
   text-indent: 40px;
+  font-size: 28px;
 }
 
 .typo{
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-indent: 40px;
+    font-size: 28px;
 }
 .text{
     text-transform: capitalize;
@@ -32,17 +38,21 @@ h1{
     font-weight: bold;
     font-style: oblique;
      word-spacing: 1rem;
+     font-size: 28px;
 }
 .decoration{
     line-height: 2em;
     letter-spacing: 0.5rem;
+    font-size: 28px;
    
 }
 .decoration::first-line{
     font-weight: bolder ;
+    font-size: 30px;
 }
 .decoration::first-letter{
     font-size: 4vw;
+    
 }
 
 .color-1{
@@ -73,10 +83,43 @@ h1{
 .color-5{
     height: 200px;
     width: 200px;
-    background-color: #F85E11;
+    background-color: #ffb895;
     color: azure;
 }
 .shades{
     display: flex;
     
+}
+button{
+    background-color: rgb(210, 237, 75);
+    height: 38px;
+
+}
+a:link{
+    font-size: 28px;
+    color: rgb(210, 30, 30);
+    text-decoration: none;
+    text-transform: uppercase;
+     background-color: rgb(210, 237, 75);
+
+}
+
+a:visited{
+    color: rgb(255, 0, 234);
+    font-size: 25px;
+    text-decoration: underline wavy blue;
+    text-transform: lowercase;
+     background-color: rgb(210, 237, 75);
+
+
+}
+a:hover{
+    text-decoration: underline rgb(90, 10, 8);
+    color: rgb(90, 10, 15);
+    font-size: 28px;
+}
+
+a:active{ 
+    color: blueviolet;
+    text-decoration: underline blue;
 }
