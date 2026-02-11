@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <fieldset class="form">
+        <!-- <legend>NEW PRE REGISTRATION FORM</legend> -->
+         NEW PRE-REGISTRATION FORM
+    </fieldset><br>
+    Type:
+        <input type="radio" value="public">Public
+        <input type="radio" value="private">Private
+         &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        Billing Branch
+<select name="Billing Branch">
+<option value="--" disabled selected  hidden>
+  </option>
+
+    <option value="Gulshan Branch">Gulshan Branch</option>
+    <option value="Numaish Branch">Numaish Branch</option>
+    <option value="Dhoraji Branch">Dhoraji Branch</option>
+    <option value="DHA Branch">DHA Branch</option>
+</select>
+ &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+         Date
+         <input type="date" name="date"> <br><br><br>
+
+    <fieldset>
+
+        Course Name:
+       <select class="CourseName" name="Course Name:">
+        <option value="--" disabled selected hidden>
+  </option>
+        <option value="Web n App Development">Web n App Development</option>
+        <option value="Introduction to AI">Introduction to AI</option>
+        <option value="Introduction to CyberSecurity">Introduction to CyberSecurity</option>
+        <option value="Graphic Designing">Graphic Designing</option>
+       </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       <button>ADD COURSE</button>
+
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label class="radio"> Assessment
+         <input type="radio" value="Yes">Yes
+         <input type="radio" value="No">No</label>
+         <hr><br><br><br>
+
+        <label for="coursename"> Client Requested Course Name: 
+         <input type="text" name="coursename" id="coursename"></label>
+         
+
+          <label for="InArabic">Course Name Arabic: 
+          <input type="text" name="In Arabic" id="InArabic"></label>
+
+
+ <label for="program">  Program/Path: 
+ <input type="text" name="program" id="program" ></label><br><br><br>
+
+ <label for="coursedivision">Course Division:
+         <input type="text" name="coursedivision" id="coursedivision"></label>
+         
+
+          <label for="MaritalLanguage">Marital Language:
+          <input type="text" name="MaritalLanguage" id="MaritalLanguage"></label>
+
+         <label for="Duration">Course Duration(Days) <input type="number" name="Duration" id="Duration"></label><br><br><br>
+
+<button>PDF Outline</button>
+<button>PPT Outline</button>
+<button>DOC Outline</button>
+ <br><br>
+
+ <div class="file">
+    Attachment:  <input type="file"></div>
+
+<input type="checkbox" name="checkbox" value=" Outline shared by Client">  Outline shared by Client <br><br>
+
+<label for="Description"><div>Description: </div><textarea name="Description" rows="5" cols="30" id="Description"></textarea></label><br><br>
+        
+<button class="button">Save Pre Registration</button>
+
+<div class="delete"><button>DELETE</button></div>
+    </fieldset>
+    
+    
+</body>
+</html>
