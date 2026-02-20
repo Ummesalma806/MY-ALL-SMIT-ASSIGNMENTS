@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+@font-face {
+    font-family: fontfont;
+    src: url(./assets/Aclonica-Regular.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(./assets/EduNSWACTHandPre-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(./assets/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(./assets/PlayfairDisplay-VariableFont_wght.ttf);
+}
+.parent{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+  
+}
+.child-1{
+    background-color: #2c6e7c;
+    color:#b1d0ca;
+    width: 385px;
+    min-height: 100vh;
+    
+
+}
+.image{
+    background-color: #b1d0ca;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   background-image: url(./assets/image.jfif);
+   background-size:cover ;
+   background-position: center;
+   border: 3px solid whitesmoke;
+
+}
+.image:hover{
+    border-radius: 20px;
+    border: 3px solid rgb(3, 64,65);
+    transition: all 2s ease 0s;
+}
+ .sidebar{
+   text-align: center;
+  font-weight: bolder;
+  font-style: normal; 
+  font-family: fontfont;
+  overflow: hidden;
+
+} 
+ .sidebar a{ 
+    display: block;
+    padding: 10px 0; 
+    text-decoration: none;
+    color: #b1d0ca;
+}
+
+ a:hover{ 
+    text-decoration: underline;
+    color: rgb(3,64,65);
+    font-weight: bolder;
+}
+
+.text-1,.text-2,.text-3,.text-4,.text-5,.text-6 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+/* ---------2ndpage----- */
+
+.child-2{
+    background-color:#b1d0ca;
+    color: #2c6e7c;
+    width: 1000px;
+     min-height: 100vh;
+    overflow-y: auto;
+}
+h1{
+    font-family: fontfont;
+    margin-top: 50px;
+    margin-left: 90px;
+    font-size: 50px;
+  /* text-align: center; */
+
+    
+}
+.name{
+    color: black;
+text-decoration: underline #2c6e7c;
+}
+.lastname{
+text-decoration: underline #000c0f;
+}
+h4{
+    text-align: center;
+        font-family:inherit;
+  font-style: normal;
+}
+p{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    /* text-align: center; */
+    line-height: 30px;
+font-family: cursive;
+font-size: 20px;
+}
+
+h4 a{
+    text-decoration: none;
+    color:rgb(10, 108, 109);
+}
+
+
+.svg{
+  margin-left: 40px;
+}
+.icons{
+    display: flex;
+     padding: 40px;
+    margin: 40px; 
+}
+.svg,.git,.fb{
+    margin-right: 46px;
+}
+
+
+ #experience{
+    color: #2c6e7c;
+     margin: 10px 50px;
+     margin-top: 50px;
+     text-align: left ;
+     font-family: fontfont;
+     font-size: 50px; 
+}
+h2{
+    color: #000c0f;
+   font-family: font2;
+   margin: 10px 50px;
+     margin-top: 50px;
+      font-size: 30px; }
+
+h3{
+  font-family: font2;
+   margin: 10px 50px;
+    color: gray;
+      font-size: 20px;
+
+}
+
+h3 p {
+    float: right;
+}
+
+#education{
+     color: #2c6e7c;
+     margin: 10px 50px;
+     margin-top: 50px;
+     text-align: left ;
+     font-family: fontfont;
+     font-size: 50px; 
+}
+.edu{
+    font-family: font3;
+
+}
+#skills{
+     color: #2c6e7c;
+     margin: 10px 50px;
+     margin-top: 50px;
+     text-align: left ;
+     font-family: fontfont;
+     font-size: 50px; 
+}
+div .point{
+    
+    color: #FF5800;
+  
+}
+div .css{
+    color: #0075C0;
+}
+.flex{
+    display: flex;
+   
+}
+.word .excel .css .point{
+      margin-top: 50px;
+    margin-right: 80px;
+}
+ol  {
+    font-size: 25px;
+list-style-type: none;
+    text-align: left;
+
+}
+#interests{
+      color: #2c6e7c;
+     margin: 10px 50px;
+     margin-top: 50px;
+     text-align: left ;
+     font-family: fontfont;
+     font-size: 50px; 
+} 
+#awards{
+      color: #2c6e7c;
+     margin: 10px 50px;
+     margin-top: 50px;
+     text-align: left ;
+     font-family: fontfont;
+     font-size: 50px; 
+} 
+ul{
+    line-height: 40px;
+    font-size: 30px; 
+  font-family: font4;
+  margin-left: 30px;
+
+}
