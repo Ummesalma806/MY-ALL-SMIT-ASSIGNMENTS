@@ -1,0 +1,230 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+body{
+    background-color: beige ;
+   
+   
+}
+.fixed{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    /* left: 1000px; */
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 10px;
+}
+.sticky{
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: sticky;
+    top: 40px;
+    left: 100px;
+    margin: 0% auto;
+     padding: 32px; 
+    background-color: crimson;
+    color: antiquewhite;
+    width: 100px;
+    height: 100px;
+}
+.parentbox{
+    padding-top: 50px;
+    display: flex;
+    position: relative;
+    left: 20px;
+ 
+   
+}
+.BOX{
+    width: 200px;
+    height: 200px;
+    border: 10px solid darkslategrey;
+     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      box-shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+}
+.BOX-1{
+    background-color: darkcyan;
+    
+}
+.BOX-2{
+    background-color: rgb(59, 158, 158);
+    position: absolute;
+    left: 100px;
+   
+    
+}
+.BOX-3{
+    background-color: rgb(76, 210, 210);
+    z-index: 1;
+}
+.BOX-4{
+    background-color:rgb(145, 203, 203);
+    position: absolute;
+    left: 300px;
+    z-index: 2;
+}
+.BOX-5{
+    background-color:  rgb(155, 225, 225);
+     position: absolute;
+    left: 400px;
+    z-index: 3;
+}
+
+/* second box */
+
+.parent{
+     padding-top: 50px;
+    display: flex;
+    position: relative;
+}
+.child{
+background-color: red;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+.child-1{ 
+    background-color:darkgreen;
+}
+.child-2{
+  position: absolute; 
+  left: 60px;
+      background-color: rgb(10, 142, 10);
+}
+.child-3{
+    z-index: 1;
+    position: absolute;
+     left: 130px; 
+     background-color: rgb(27, 177, 27);
+}
+.child-4{
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+     background-color: rgb(39, 193, 39);
+     
+}
+.child-5{
+    position: absolute;
+    left: 270px; 
+    z-index: 1;
+     background-color: rgb(47, 222, 47);
+}
+.child-6{
+    position: absolute;
+    left: 330px; 
+    z-index: 1;
+     background-color: rgb(53, 241, 53);
+}
+.child-7{
+    position: absolute;
+    left: 390px; 
+    z-index: 1;
+     background-color: rgb(77, 245, 77);
+}
+.child-8{
+    position: absolute;
+    left: 450px; 
+    z-index: 1;
+     background-color: rgb(102, 254, 102);
+}
+/* third box */
+.main{
+     padding-top: 50px;
+     display: flex; 
+    position: relative;
+
+ 
+}
+.container{
+background-color: red;
+width: 100px;
+height: 100px;
+ clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); 
+
+}
+.container-1{
+    background-color: rgb(255, 34, 145);
+}
+.container-2{
+    background-color: rgb(192, 26, 109);
+}
+.container-3{
+    background-color: rgb(158, 17, 87);
+}
+.container-4{
+    width: 200px;
+    height: 220px;
+    background-color: rgb(109, 6, 58);
+}
+.container-5{
+    background-color: rgb(133, 56, 94);
+}
+.container-6{
+    background-color: rgb(163, 67, 115);
+}
+.container-7{
+    background-color: rgb(202, 91, 146);
+}
+/* fourth box */
+
+.parentshape{
+     padding-top: 50px;
+    display: flex;
+    position: relative;
+}
+.shape{
+background-color: red;
+width: 150px;
+height: 150px;
+clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+ border: 2px solid rgb(246, 5, 5); 
+}
+.shape-1{ 
+    background-color:lightcoral;
+}
+.shape-2{
+  position: absolute; 
+  left: 60px;
+      background-color: rgb(238, 107, 107);
+}
+.shape-3{
+    z-index: 1;
+    position: absolute;
+     left: 130px; 
+     background-color: rgb(225, 119, 119);
+}
+.shape-4{
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+     background-color: rgb(213, 100, 100);
+     
+}
+.shape-5{
+    position: absolute;
+    left: 270px; 
+    z-index: 1;
+     background-color: rgb(205, 83, 83);
+}
+.shape-6{
+    position: absolute;
+    left: 330px; 
+    z-index: 1;
+     background-color: rgb(186, 74, 74);
+}
+.shape-7{
+    position: absolute;
+    left: 390px; 
+    z-index: 1;
+     background-color: rgb(176, 69, 69);
+}
+.shape-8{
+    position: absolute;
+    left: 450px; 
+    z-index: 1;
+     background-color: rgb(160, 60, 60);}
