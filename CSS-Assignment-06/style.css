@@ -92,8 +92,9 @@ left: 220px;
 bottom: 350px;
 }
 h1{
+
 text-transform: capitalize;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family:cursive;
 }
 h5{
   color: gray;
