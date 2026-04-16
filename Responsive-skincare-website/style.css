@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+html, body{
+  overflow-x: hidden;
+}
+.wrapper {
+  max-width: 1900px;
+}
+.main {
+  max-width: 1500px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  
+}
+
+/* navbar starts */
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger{
+   display: none;
+}
+  
+ 
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+}
+.logo {
+  padding: 15px;
+}
+ul li:hover {
+  border-bottom: 2px solid black;
+}
+.bar-2 {
+  width: 100%;
+  height: 35px;
+  font-weight: 500;
+  display: flex;
+  gap: 600px;
+}
+ol {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  margin: 5px;
+  gap: 10px;
+  list-style-type: none;
+}
+ol li {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+} 
+/* navbar ended */
+
+.glow-main-content {
+  width: 100%;
+ min-height: 500px; 
+  background-color: #fff6fd;
+  position: relative;
+  top: 100px;
+}
+.glowpart {
+  display: flex;
+  justify-content: space-around;
+}
+.glowpart img{
+  width: 55%;
+
+}
+.glow-text {
+  padding: 60px;
+}
+.glow-bottles {
+  margin-top: 4%;}
+  
+  .ex{
+    margin-left: 240px;
+  }
+  h1, h2{
+    font-size: 55px;
+    color: rgb(10, 10, 10);
+    font-family:sans-serif;
+  }
+  p{
+    font-size: 25px;
+    margin-top: 8px;
+    line-height: 2;
+  }
+  .glow-text button{
+  width: 165px;
+  height: 40px;
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 30px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-top: 20px;
+  }
+  button span{
+    padding-top: 2px;
+  }
+  /* glow-part-ended */
+  .acne-main-content {
+    width: 100%;
+   min-height: 500px;
+   gap: 20px;
+   margin-top: 200px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-around;
+  }
+  h2{
+    padding: 25px;
+    font-weight: lighter;
+  }
+  .acne-img-part, .acne-text-part{
+    width: 50%;
+  }
+  .acne-img-part img{
+    width: 500px;
+  }
+  .acne-text-part .xtrag{
+    font-size: 25px;
+    line-height: 2;
+    margin-top: 100px;
+  
+  }
+  .acne-text-part button{
+      width: 235px;
+  height: 45px;
+  background-color: rgb(252, 250, 250);
+  color: #0b0b0b;
+  border-radius: 30px;
+  border: 1px solid rgb(13, 13, 13);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-top: 20px;
+  
+  }
+  /* acne-part-ended */
+  .cards-content{
+    width: 100%;
+    min-height: 400px;
+    background-color: beige;
+     margin-top: 200px;
+  }
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .card-header h2 {
+font-size: 28px;
+  }
+  .card-header .underscore{
+   text-decoration: underline;
+  }
+  .card-parent{
+    width: 80%;
+    min-height:380px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px ;
+  }
+  
+  .card{
+    width: 250px;
+   height: 300px;
+    background-color: #E4E4E4;
+    border: 2px solid rgb(127, 123, 123);
+    border-radius: 30px;
+  }
+
+  .head{
+    width: 100%;
+    height: 19%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body{
+    width: 100%;
+   height: 50%;
+  } 
+  .bottom{
+    width: 100%;
+  height: 30%;
+  }
+
+  .head p{
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: serif;
+line-height: -3;      
+  }
+  .head p span{
+  display: flex;
+  gap: 0;
+  }
+.head span svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+}
+.heart{
+  margin-right: 20px;
+}
+.body img{
+  width: 200px;
+  height: 150px;
+ margin: 18px 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+@media (max-width:1440px) {
+  .bar-2{
+    display:none
+  }
+  .glow-bottles{
+    display: none;
+  }
+}
+@media (max-width:1100px) {
+  ul{
+    display:none
+  }
+  .acne-main-content{
+    flex-direction: column;
+    align-items: center;
+  }
+    
+}
+@media (max-width:1023px) {
+  .icons{
+    display:none
+  }
+  .hamburger{
+    display: block;
+   margin-left: 300px;
+  } 
+}
+@media (max-width:800px) {
+ .glow-main-content{
+width: 100%;
+min-height: auto;
+}
+.glowpart {
+    flex-direction: column;
+    align-items: center;
+  }
+.glow-text {
+    padding: 20px;
+    text-align: center;
+  }
+   .ex {
+    margin-left: 0; 
+  }
+
+  h1 {
+    font-size: 35px; 
+  }
+
+  p {
+    font-size: 18px;
+  }
+button{
+  width: 80%;
+}
+.acne-main-content{
+  align-items: center;
+}
+.acne-img-part img{
+  width: 300px;
+}
+}
+
+
+
