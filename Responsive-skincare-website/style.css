@@ -11,6 +11,8 @@ html, body{
 }
 .wrapper {
   max-width: 1900px;
+  margin: 0 auto;
+
 }
 .main {
   max-width: 1500px;
@@ -83,15 +85,16 @@ ol li {
   width: 100%;
  min-height: 500px; 
   background-color: #fff6fd;
-  position: relative;
-  top: 100px;
+  margin-top: 90px;
+ 
 }
 .glowpart {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .glowpart img{
-  width: 55%;
+  width: 80%;
 
 }
 .glow-text {
@@ -101,7 +104,8 @@ ol li {
   margin-top: 4%;}
   
   .ex{
-    margin-left: 240px;
+    
+    padding-left: 240px;
   }
   h1, h2{
     font-size: 55px;
@@ -537,137 +541,6 @@ font-size: 15px;
 
 
 
-
-
-
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-/* -------------------------------- */
-
-@media (max-width:1440px) {
-  .bar-2{
-    display:none
-  }
-  .glow-bottles{
-    display: none;
-  }
-}
-@media (max-width:1340px) {
-   .parent{
-    display: flex;
-    flex-direction: column;
-   
-    align-items: center;
-    justify-content: center;
-    text-align: center ;
-    margin: 0;
-  }
-  .child{
-    width: 350px;
-    height: 300px;
-    margin: 0 auto;
-  }
-}
-@media (max-width:1100px) {
-  ul{
-    display:none
-  }
-  .acne-main-content{
-    flex-direction: column;
-    align-items: center;
-  }
-  .AD-MAIN{
-    padding: 30px 15px;
-  }
-  .AD-MAIN .up{
-    font-size: 28px;
-  }
-
-  .AD-MAIN .up span{
-    font-size: 16px;
-  }
-
-  .AD-MAIN .down{
-    font-size: 30px;
-  } 
-    
-  .guide-main-content{
-    flex-direction: column;
-    text-align: center;
-  }
-  .guide-text-part,
-  .guide-img-part{
-    width: 100%;
-  }
- 
-}
-@media (max-width:1023px) {
-  .icons{
-    display:none
-  }
-  .hamburger{
-    display: block;
-   margin-left: 300px;
-  } 
-}
-@media (max-width:890px) {
-.T-cards-parent{
-  column-count: 2;
-}
-  
-}
-@media (max-width:800px) {
- .glow-main-content{
-width: 100%;
-min-height: auto;
-}
-.glowpart {
-    flex-direction: column;
-    align-items: center;
-  }
-.glow-text {
-    padding: 20px;
-    text-align: center;
-  }
-   .ex {
-    margin-left: 0; 
-  }
-
-  h1 {
-    font-size: 35px; 
-  }
-
-  p {
-    font-size: 18px;
-  }
-button{
-  width: 80%;
-}
-.acne-main-content{
-  align-items: center;
-}
-.acne-img-part img{
-  width: 300px;
-}
-}
-@media (max-width:590px) {
-.T-cards-parent{
-  column-count: 1;
-}
-.AD-MAIN{
-  padding: 0 15px;
-}
-  .AD-MAIN .up{
-    font-size: 22px;
-  }
-
-  .AD-MAIN .down{
-    font-size: 24px;
-  }
-}
 
 
 
