@@ -1,0 +1,462 @@
+body{
+   
+    background:#e3f2fd;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+.card * {
+  position: absolute;
+}
+
+.card{
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  color: #77c7fc;
+  background-color: #a8dcff;
+  border-radius: 16px;
+  transform: translateY(25%);
+  box-shadow: 0 10px 16px #c9e9ff;
+  overflow: hidden;
+}
+
+.card-text {
+  height: 200px;
+  width: 300px;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #474747;
+  font-weight: bold;
+  font-size: 30px;
+  top: 7%;
+  left: 7%;
+}
+
+.card-text span {
+  display: block;
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+.card-bottom {
+  height: 33%;
+  width: 99.5%;
+  background-color: #77c7fc;
+  bottom: 0;
+  border: 1px solid;
+  border-radius: 0 0 16px 16px;
+}
+
+.week {
+  height: 100%;
+  width: 16.7%;
+}
+
+.week-mon {
+  left: 0;
+}
+
+.week-tue {
+  left: 16.7%;
+}
+
+.week-wed {
+  left: 33.4%;
+}
+
+.week-thu {
+  left: 50.1%;
+}
+
+.week-fri {
+  left: 66.8%;
+}
+
+.week-sat {
+  left: 83.5%;
+}
+
+.cloud {
+  height: 15%;
+  width: 30%;
+  background-color: white;
+  border-radius: 100px;
+  opacity: 0.7;
+}
+
+.cloud::after,
+.cloud::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+}
+
+.cloud:before {
+  border-radius: 50%;
+  width: 40%;
+  height: 100%;
+  right: 15%;
+  top: -55%;
+}
+
+.cloud:after {
+  height: 70%;
+  width: 30%;
+  border-radius: 50%;
+  left: 18%;
+  top: -45%;
+}
+
+.cloud-top {
+  right: 10%;
+  top: 15%;
+  animation: rightLeft 10s linear infinite alternate;
+}
+
+.cloud-bottom {
+  top: 45%;
+  right: 50%;
+  animation: leftRight 10s linear infinite alternate;
+}
+
+@keyframes rightLeft {
+  0% {
+    margin-right: -10%;
+  }
+  100% {
+    margin-right: 60%;
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    margin-right: 20%;
+  }
+  100% {
+    margin-right: -50%;
+  }
+}
+
+.sun-icon {
+  height: 10%;
+  width: 15%;
+  border-radius: 50%;
+  background-color: yellow;
+  border: 2px solid yellow;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sun-icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 7px;
+  background-color: yellow;
+  top: 50%;
+  left: -100%;
+  transform: translate(0%, -50%);
+}
+
+.sun-icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 7px;
+  background-color: yellow;
+  top: 50%;
+  right: -100%;
+  transform: translate(0%, -50%);
+}
+
+.sun-ray {
+  width: 2px;
+  height: 7px;
+  background-color: yellow;
+}
+
+.top {
+  top: -70%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.top-left {
+  top: -35%;
+  left: -50%;
+  transform: translate(50%, -50%) rotate(-45deg);
+}
+
+.top-right {
+  top: -40%;
+  right: -45%;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+.bottom {
+  bottom: -120%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.bottom-left {
+  bottom: -90%;
+  left: -50%;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+.bottom-right {
+  bottom: -90%;
+  right: -45%;
+  transform: translate(50%, -50%) rotate(-45deg);
+}
+
+.cloudy-icon {
+  height: 10%;
+  width: 40%;
+  border-radius: 100px;
+  border: 3px solid white;
+  background-color: white;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cloudy-icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 40%;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid white;
+  top: -20%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.rain1 {
+  height: 15px;
+  width: 3px;
+  background-color: #0047ab;
+  top: 50%;
+  left: 20%;
+  transform: translateX(-50%) rotate(10deg);
+}
+
+.rain2 {
+  height: 20px;
+  width: 3px;
+  background-color: #0047ab;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-50%) rotate(10deg);
+}
+
+.rain3 {
+  height: 15px;
+  width: 3px;
+  background-color: #0047ab;
+  top: 50%;
+  left: 65%;
+  transform: translateX(-50%) rotate(10deg);
+}
+
+.sun {
+  height: 100%;
+  width: 45%;
+  background-color: yellow;
+  border-radius: 50%;
+  top: -110%;
+  right: 0;
+  z-index: -1;
+}
+
+.sun::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 7px;
+  background-color: yellow;
+  top: -30%;
+  left: -10%;
+  transform: translate(0%, -50%) rotate(-45deg);
+}
+
+.sun::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 7px;
+  background-color: yellow;
+  top: -50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
+
+.ray1 {
+  width: 2px;
+  height: 7px;
+  background-color: yellow;
+  top: -20%;
+  right: -20%;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+.ray2 {
+  width: 2px;
+  height: 7px;
+  background-color: yellow;
+  top: 45%;
+  right: -50%;
+  transform: translate(50%, -50%) rotate(90deg);
+}
+
+.ray3 {
+  width: 2px;
+  height: 7px;
+  background-color: yellow;
+  top: 110%;
+  right: -30%;
+  transform: translate(50%, -50%) rotate(135deg);
+}
+
+.day {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Noto Sans TC", sans-serif;
+  color: #474747;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.degrees {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Noto Sans TC", sans-serif;
+  color: #474747;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* ------------- */
+.w-card{
+  margin: 0 auto;
+  margin-bottom: 8%;
+  padding: 20px;
+  width: 500px;
+  height: 450px;
+  border-radius: 16px;
+  transform: translateY(15%);
+  box-shadow: 0 10px 16px #a7b5bc;
+  overflow: hidden;
+}
+.w-card-body{
+
+  background-color:#FCE4EC ;
+}
+.w-card-body2{
+background-color:#FFF8F0 ;
+}
+
+/* ------------------- */
+
+
+
+
+/* Flip Card */
+.flip-card {
+  margin: 5% auto;
+  background-color: transparent;
+  width: 320px;
+  height: 420px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+  box-sizing:border-box;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.flip-card-front{
+  background-image:url("https://media.istockphoto.com/id/533292615/photo/alley-in-snowy-morning.jpg?s=612x612&w=0&k=20&c=LKQgMoqdgHP5PkelvEMdwXhCMG_M1XhGoFT27-Hjrk4=");
+  background-size:cover;
+  background-position:center;
+}
+
+.flip-card-back{
+  background-image:url("https://thumbs.dreamstime.com/b/merry-christmas-happy-new-year-greeting-card-copy-space-snowman-standing-winter-landscape-snow-82233888.jpg");
+  background-size:cover;
+  background-position:center;
+  transform:rotateY(180deg);
+}
+.flip-card-front::before,
+.flip-card-back::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0, 0, 0, 0.15);
+}
+
+.flip-card-front * ,
+.flip-card-back *{
+  position:relative;
+  z-index:2;
+}
+
+.temp{
+  font-size:60px;
+  font-weight:bold;
+  margin:10px 0;
+}
+
+.title{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.desc{
+  font-size:18px;
+  line-height:1.5;
+}
+
+.forecast{
+  margin-top:20px;
+  font-size:18px;
+}
+/* --------- */
+
+
+
