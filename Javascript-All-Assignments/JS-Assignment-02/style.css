@@ -457,6 +457,11 @@ background-color:#FFF8F0 ;
   font-size:18px;
 }
 /* --------- */
-
+/* media query */
+@media (max-width:545px) {
+  .card , .w-card , .flip-card {
+width:100%;
+}
+}
 
 
