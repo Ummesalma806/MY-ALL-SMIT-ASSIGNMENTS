@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIDS SOLUTION</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body{
+         font-family: Arial, sans-serif;
+        }
+        .main{
+            width: 100%;
+            min-height: 100vh;
+            background-image:url('https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-school-kids-background-vector-image_15806827.jpg') ;
+       background-repeat: no-repeat;
+       background-size: cover;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .tablebox{
+            width: 50%;
+            height: 60vh;
+            border: 2px solid blue;
+             overflow-y: auto;
+             background-color:rgba(255,255,255,.8);
+             padding:20px;
+    box-sizing:border-box;
+      display: flex;
+    flex-direction: column;
+
+        }
+#output{
+  flex: 1;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    gap: 10px;
+    font-size: 20px;
+       color:#1E3A8A;
+
+}
+#heading{
+    text-align: center;
+    color: #0D47A1;
+    margin-bottom: 20px;
+}
+
+#output div{
+    border: 2px solid #0D47A1;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.7);
+     transition: 0.3s;
+}
+#output div:hover{
+    background-color: #DBEAFE;
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="main">
+    <div class="tablebox">
+        <h1 class="animate__animated animate__tada" id="heading"></h1>
+   <div id="output"></div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
