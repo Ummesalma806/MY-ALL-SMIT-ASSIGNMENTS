@@ -52,10 +52,10 @@
 // document.write(`<b>Message:</b> ${message}<br><b>After replacement: </b>${newMessage}`)
 
 // //----09------
-var string = "472"
-newString = Number("472")
+// var string = "472"
+// newString = Number("472")
 
-document.write(`<b>Value: </b>${string} <br><b>Type: </b>${typeof string}<br> <b>Value after changing into number: </b>${newString}<br><b>Type: </b>${typeof newString}`)
+// document.write(`<b>Value: </b>${string} <br><b>Type: </b>${typeof string}<br> <b>Value after changing into number: </b>${newString}<br><b>Type: </b>${typeof newString}`)
 
 // // ---------10-------
 // var userInput = prompt("Enter any fruit or vegetable?")
