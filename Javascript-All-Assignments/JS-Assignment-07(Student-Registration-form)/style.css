@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #eaf4ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 102, 204, 0.2);
+  border-top: 6px solid #0066cc;
+}
+
+h1 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+b {
+  display: block;
+  margin-bottom: 6px;
+  color: #003366;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #bcd7f5;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #004c99;
+}
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f9ff;
+    border: 1px solid #0066cc;
+    border-radius: 8px;
+    color: #003366;
+    line-height: 1.8;
+    display: none;   /* Shuru mein hide rahega */
+}
+
+@media (max-width: 500px) {
+  .box {
+    padding: 20px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}

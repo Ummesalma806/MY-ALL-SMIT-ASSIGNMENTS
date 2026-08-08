@@ -45,6 +45,48 @@
     height: 300px;
     object-fit: cover;
 }
+.gallery-img{
+    width:100%;
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
+}
+
+.img-large{
+    height:420px;
+}
+
+.img-tall{
+    height:420px;
+}
+
+.img-medium{
+    height:400px;
+}
+
+.img-small{
+    height:260px;
+}
+
+@media (max-width:991px){
+
+    .img-large,
+    .img-tall,
+    .img-medium{
+        height:320px;
+    }
+
+    .img-small{
+        height:220px;
+    }
+}
+
+@media (max-width:576px){
+
+    .gallery-img{
+        height:220px !important;
+    }
+}
 /* ===================== SHOP.CSS=========== */
 .background{
   min-height: 320px;
