@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="dark-theme">
+    <div class="main">
+      <div class="calculator">
+        
+        <!-- NEW: Theme Switcher Bar -->
+        <div class="calc-header">
+          <span class="brand-title">CALCULATOR</span>
+          <button id="themeToggle" class="theme-toggle-btn">
+            <span id="themeIcon">🌙</span>
+          </button>
+        </div>
+
+        <div class="display" id="display">0</div>
+
+        <div class="buttons">
+          <button id="clear" class="btn-action">AC</button>
+          <button id="delete" class="btn-action">DEL</button>
+          <button id="percent" class="btn-operator">%</button>
+          <button id="division" class="btn-operator">/</button>
+
+          <button id="seven">7</button>
+          <button id="eight">8</button>
+          <button id="nine">9</button>
+          <button id="multiply" class="btn-operator">*</button>
+
+          <button id="four">4</button>
+          <button id="five">5</button>
+          <button id="six">6</button>
+          <button id="minus" class="btn-operator">-</button>
+
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="plus" class="btn-operator">+</button>
+
+          <button id="zero">0</button>
+          <button id="decimal">.</button>
+          <button id="equals" class="btn-equals">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html> 
