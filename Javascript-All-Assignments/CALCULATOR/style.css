@@ -25,21 +25,38 @@ body.dark-theme {
 }
 
 /* --- LIGHT THEME (SOFT GLOW) --- */
+/* --- LIGHT THEME (ENHANCED HIGH-CONTRAST & PROMINENT BUTTONS) --- */
 body.light-theme {
-  --bg-color: #f1f5f9;
-  --calc-bg: rgba(255, 255, 255, 0.75);
-  --calc-border: rgba(255, 255, 255, 0.9);
-  --display-bg: rgba(255, 255, 255, 0.9);
-  --text-primary: #0f172a;
-  --text-secondary: rgba(15, 23, 42, 0.5);
-  --btn-bg: rgba(255, 255, 255, 0.8);
-  --btn-hover: #ffffff;
-  --action-color: #ef4444;
-  --operator-color: #0284c7;
-  --equals-bg: linear-gradient(135deg, #4f46e5, #9333ea);
-  --shadow-color: rgba(15, 23, 42, 0.1);
-  --blob-1: rgba(99, 102, 241, 0.15);
-  --blob-2: rgba(14, 165, 233, 0.15);
+  --bg-color: #e2e8f0;
+  --calc-bg: rgba(255, 255, 255, 0.85);
+  --calc-border: #cbd5e1;
+  --display-bg: #ffffff;
+  --text-primary: #0f172a;       /* Deep Navy Blue for crisp readability */
+  --text-secondary: #475569;
+  --btn-bg: #ffffff;             /* Solid white for sharp contrast */
+  --btn-hover: #f1f5f9;
+  --action-color: #dc2626;       /* Vibrant Red */
+  --operator-color: #0284c7;     /* Vibrant Blue */
+  --equals-bg: linear-gradient(135deg, #4f46e5, #7c3aed);
+  --shadow-color: rgba(15, 23, 42, 0.12);
+  --blob-1: rgba(99, 102, 241, 0.2);
+  --blob-2: rgba(14, 165, 233, 0.2);
+}
+
+/* Light Theme Specific Button Polish */
+body.light-theme button {
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme button:hover {
+  border-color: #94a3b8 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .display {
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.04);
 }
 
 .main {
