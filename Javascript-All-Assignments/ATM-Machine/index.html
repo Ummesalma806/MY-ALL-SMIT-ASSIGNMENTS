@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMIT Next-Gen ATM Kiosk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="kiosk-container">
+    
+    <!-- Top Branding Header -->
+    <div class="kiosk-header">
+      <div class="brand">
+        <span class="bank-icon">🏛️</span>
+        <div>
+          <h2>SMIT GLOBAL BANK</h2>
+          <small>Automated Teller Machine</small>
+        </div>
+      </div>
+      <div class="status-pill">
+        <span class="dot"></span> ONLINE
+      </div>
+    </div>
+
+    <!-- Main Kiosk Body -->
+    <div class="kiosk-body">
+      
+      <!-- LEFT SIDE: Debit Card & Quick Stats -->
+      <div class="kiosk-sidebar">
+        
+        <!-- Virtual Metallic Debit Card -->
+        <div class="debit-card">
+          <div class="card-chip"></div>
+          <div class="card-number">•••• •••• •••• 9921</div>
+          <div class="card-footer">
+            <span>UMM-E-SALMA</span>
+            <span>12/28</span>
+          </div>
+        </div>
+
+        <!-- Balance Display -->
+        <div class="side-balance-box">
+          <small>AVAILABLE BALANCE</small>
+          <h3>PKR <span id="balanceDisplay">10,000</span></h3>
+        </div>
+
+        <!-- Card Slot Animation -->
+        <div class="card-slot">
+          <div class="slot-light"></div>
+          <span>INSERT CARD SLOT</span>
+        </div>
+
+      </div>
+
+      <!-- RIGHT SIDE: Screen & Dynamic Operations -->
+      <div class="kiosk-screen">
+        
+        <!-- 1. LOGIN SCREEN -->
+<div id="pinScreen" class="screen-view">
+  <h3>Authentication Required</h3>
+  <p class="subtitle">Enter your 4-digit security PIN to proceed</p>
+  
+  <p id="pinError" class="error-msg"></p>
+
+  <div class="pin-box">
+    <input type="password" id="pinInput" maxlength="4" placeholder="••••" readonly>
+  </div>
+
+  <div class="keypad">
+    <button onclick="pressKey('1')">1</button>
+    <button onclick="pressKey('2')">2</button>
+    <button onclick="pressKey('3')">3</button>
+    <button onclick="pressKey('4')">4</button>
+    <button onclick="pressKey('5')">5</button>
+    <button onclick="pressKey('6')">6</button>
+    <button onclick="pressKey('7')">7</button>
+    <button onclick="pressKey('8')">8</button>
+    <button onclick="pressKey('9')">9</button>
+    <button class="btn-clear" onclick="clearPin()">CLEAR</button>
+    <button onclick="pressKey('0')">0</button>
+    <button class="btn-enter" onclick="verifyPin()">ENTER</button>
+  </div>
+</div>
+
+        <!--DASHBOARD SCREEN-->
+        <div id="dashboardScreen" class="screen-view hidden">
+          
+          <div class="dash-top">
+            <h4>Select Transaction</h4>
+            <button onclick="logout()" class="btn-exit">EJECT CARD ⏏</button>
+          </div>
+
+          <div class="amount-input-group">
+            <label>Transaction Amount (PKR)</label>
+            <input type="number" id="amountInput" placeholder="Enter amount..." min="1">
+            <p id="transactionMsg" class="msg-box"></p>
+          </div>
+
+          <!-- Operation Action Buttons -->
+          <div class="kiosk-actions">
+            <button class="action-btn dep-btn" onclick="handleDeposit()">
+              <span>💰 DEPOSIT</span>
+              <small>Add cash to account</small>
+            </button>
+            <button class="action-btn wit-btn" onclick="handleWithdraw()">
+              <span>💸 WITHDRAW</span>
+              <small>Get instant cash</small>
+            </button>
+          </div>
+
+          <!-- Quick Cash Bar -->
+          <div class="quick-cash-bar">
+            <span>Fast Cash:</span>
+            <button onclick="fastCash(1000)">1,000</button>
+            <button onclick="fastCash(5000)">5,000</button>
+            <button onclick="fastCash(10000)">10,000</button>
+          </div>
+
+          <!-- History Receipt Area -->
+          <div class="receipt-area">
+            <h5>Statement Log</h5>
+            <ul id="historyList" class="history-list">
+              <li class="empty-msg">No transactions recorded.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
